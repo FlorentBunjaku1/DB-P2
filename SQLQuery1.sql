@@ -12,7 +12,7 @@ Create Table DrejtoriEkzekutiv(
 	Qyteti varchar(25) Not Null,
 	Rruga varchar(50) Not Null,
 	ZipKodi int Not Null,
-	Zyrja int Foregin Key Zyrja(Nr_Dhomes) ON Update Cascade ON Delete Set Null
+	Zyrja int Foreign Key Zyrja(Nr_Dhomes) ON Update Cascade ON Delete Set Null
 );
 -----Tabela DrejtoriEkzekutiv------
 
@@ -37,6 +37,11 @@ Create Table Vizitori(
 	Mbimeri varchar(20) Not Null,
 	KohaArdhjes int not null,
 	KohaShkuarjes int not null,
+	Selia int Foreign Key references Selia(Nr_Identifikues)
+);
+-----Tabela SallaTakimeve----
+Create Table SallaTakimeve(
+	Nr_Salles int Primary Key,
 	Selia int Foreign Key references Selia(Nr_Identifikues)
 );
 
