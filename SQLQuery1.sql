@@ -27,3 +27,7 @@ Create Table Selia(
 	Drejtori int Foreign Key References DrejtoriEkzekutiv(Id_Drejtori) On Update Cascade ON Delete Set Null
 );
 -----Tabela Selia------
+
+
+
+----Tabela Vizitori-----
