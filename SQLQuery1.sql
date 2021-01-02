@@ -31,3 +31,20 @@ Create Table Selia(
 
 
 ----Tabela Vizitori-----
+Create Table Vizitori(
+	Leternjoftimi int Primary Key,
+	Emri varchar(20) Not Null,
+	Mbimeri varchar(20) Not Null,
+	KohaArdhjes int not null,
+	KohaShkuarjes int not null,
+	Selia int Foreign Key references Selia(Nr_Identifikus)
+);
+
+
+
+
+
+
+
+
+
