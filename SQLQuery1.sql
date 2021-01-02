@@ -37,7 +37,7 @@ Create Table Vizitori(
 	Mbimeri varchar(20) Not Null,
 	KohaArdhjes int not null,
 	KohaShkuarjes int not null,
-	Selia int Foreign Key references Selia(Nr_Identifikus)
+	Selia int Foreign Key references Selia(Nr_Identifikues)
 );
 
 
