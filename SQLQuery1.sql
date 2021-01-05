@@ -97,6 +97,36 @@ Create Table SallaTakimeve(
 	Selia int Foreign Key references Selia(Nr_Identifikues)
 );
 
+-----Tabela MenagjeriProjekteve----
+Create Table MenagjeriProjekteve(
+	ID_Puntori int,
+	Foreign Key (ID_Puntori) References StafiPuntorve(ID_Puntori),
+	Primary Key (ID_Puntori)
+);
+-----Tabela MenagjeriProjekteve----
+
+-----Tabela ZyrtarProjekteve----
+Create Table ZyrtarProjekteve(
+	ID_Puntori int Primary Key,
+	Menaxheri int,
+	Foreign Key (Menaxheri) References MenagjeriProjekteve(ID_Puntori),
+	Foreign Key (ID_Puntori) References StafiPuntorve(ID_Puntori),
+);
+-----Tabela ZyrtarProjekteve----
+
+-----Tabela Takimi----
+Create Table Takimi(
+	Nr_Takimit int Primary Key,
+	KohaTakimit time,
+	Salla int Foreign Key References SallaTakimeve(Nr_Salles),
+	Drejotri int Foreign Key References DrejtoriEkzekutiv(Id_Drejtori)
+);
+-----Tabela Takimi----
+
+
+
+
+
 
 
 
