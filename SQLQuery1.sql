@@ -38,6 +38,17 @@ Create Table StafiPuntorve(
 );
 -----Tabela StafiPuntorve------
 
+-----Tabela Selia-Stafi------
+Create Table Selia_Stafi(
+	Selia int,
+	Stafi int,
+	Primary Key (Selia, Stafi),
+	Foreign Key (Selia) References Selia(Nr_Identifikues),
+	Foreign Key (Stafi) References StafiPuntorve(ID_Puntori)
+);
+-----Tabela Selia-Stafi------
+
+
 -----Tabela Zyrja------
 Create Table Zyrja(
 	Nr_Dhomes int Primary Key Identity(1,1),
@@ -60,6 +71,16 @@ Create Table DrejtoriEkzekutiv(
 	Selia int Foreign Key References Selia(Nr_Identifikues) UNIQUE
 );
 -----Tabela DrejtoriEkzekutiv------
+
+-----Tabela Telefoni------
+Create Table Telefoni(
+	Id_Drejtori int,
+	Nr_Telefonit int,
+	Foreign Key (Id_Drejtori) References DrejtoriEkzekutiv(Id_Drejtori) ,
+	Primary Key (ID_Drejtori, Nr_Telefonit)
+);
+-----Tabela Telefoni------
+
 
 ----Tabela Vizitori-----
 Create Table Vizitori(
