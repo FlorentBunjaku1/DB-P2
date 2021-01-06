@@ -91,12 +91,12 @@ Create Table Vizitori(
 	Mbimeri varchar(20) Not Null,
 	KohaArdhjes int not null,
 	KohaShkuarjes int not null,
-	Selia int Foreign Key references Selia(Nr_Identifikues)
+	Selia int Foreign Key references Selia(Nr_Identifikues) Unique
 );
 -----Tabela SallaTakimeve----
 Create Table SallaTakimeve(
 	Nr_Salles int Primary Key,
-	Selia int Foreign Key references Selia(Nr_Identifikues)
+	Selia int Foreign Key references Selia(Nr_Identifikues) Unique
 );
 
 -----Tabela MenagjeriProjekteve----
@@ -184,8 +184,8 @@ Create Table Shpallja_Fermeri(
 
 -----Tabela Menaxheri_Zyrtari_SHF----
 Create Table Menagjeri_Zyrtari_SHF(
-	Zyrtari int,
-	Menagjeri int,
+	Zyrtari int Unique,
+	Menagjeri int Unique,
 	Primary Key (Zyrtari, Menagjeri),
 	Fermeri int ,
 	Shpallja int ,
@@ -253,8 +253,8 @@ Create Table Orari(
 
 -----Tabela Menagjeri_Aktiviteti_Shpallja----
 Create Table Menagjeri_Aktiviteti_Shpallja(
-	Aktiviteti char(20),
-	Menagjeri int,
+	Aktiviteti char(20) Unique,
+	Menagjeri int Unique,
 	Shpallja int Foreign Key References Shpallja(Numri_Shpalljes),
 	Primary key (Aktiviteti, Menagjeri),
 	Foreign Key(Menagjeri) References MenagjeriProjekteve(ID_Puntori),
