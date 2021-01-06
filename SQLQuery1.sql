@@ -10,10 +10,10 @@ Drop DataBase Projekti_OJQ
 Create Table Selia(
 	Nr_Identifikues int Primary Key,
 	Emri varchar(20) Not Null,
-	Mbimeri varchar(20) Not Null,
 	Qyteti varchar(25) Not Null,
 	Rruga varchar(50) Not Null,
 	ZipKodi int Not Null,
+
 );
 -----Tabela Selia------
 
@@ -89,8 +89,8 @@ Create Table Vizitori(
 	Leternjoftimi int Primary Key,
 	Emri varchar(20) Not Null,
 	Mbimeri varchar(20) Not Null,
-	KohaArdhjes int not null,
-	KohaShkuarjes int not null,
+	KohaArdhjes date not null,
+	KohaShkuarjes date not null,
 	Selia int Foreign Key references Selia(Nr_Identifikues) Unique
 );
 -----Tabela SallaTakimeve----
@@ -261,6 +261,45 @@ Create Table Menagjeri_Aktiviteti_Shpallja(
 	Foreign Key(Aktiviteti) References Aktiviteti(ID_Aktiviteti)
 );
 -----Tabela Menagjeri_Aktiviteti_Shpallja----
+
+---Insertimi i seteve te te dhenave per tabelat Prind---
+
+-------------------1) Tabela Selia-------------
+insert into Selia values ('001','Selia1','Vushtrri','Deshmoret e Kombit','42000')
+insert into Selia values ('002','Selia2','Mitrovice','Ardhmeria','40000')
+insert into Selia values ('003','Selia3','Prishtine','7 Shtatori','42000')
+insert into Selia values ('004','Selia4','Gjakove','1 Tetori','30000')
+insert into Selia values ('005','Selia5','Prizren','Sami Frasheri','22000')
+insert into Selia values ('006','Selia6','Gjilan','Ali Kelmendi','29000')
+insert into Selia values ('007','Selia7','Ferizaj','Ferhat Draga','50000')
+insert into Selia values ('008','Selia8','Istog','Mustafe Shyti','46000')
+insert into Selia values ('009','Selia9','Peje','Bahri Kuqi','23000')
+insert into Selia values ('010','Selia10','Lipijan','Atdheu','24000')
+
+Select * from Selia;
+-------------------1) Tabela Selia------------
+
+------------------2) Tabela Vizitori----------
+insert into Vizitori values('1243724628','Donjeta','Krasniqi','2020-12-29','2020-12-30','001')
+insert into Vizitori values('1243724392','Arton','Gashi','2021-01-04','2021-01-06','002')
+insert into Vizitori values('1143324622','Endrit','Bajrami','2021-01-07','2021-01-08','003')
+insert into Vizitori values('1443724327','Edmond','Muriqi','2021-01-01','2021-01-02','004')
+insert into Vizitori values('1267424622','Liridon','Hyseni','2021-01-03','2021-01-04','005')
+insert into Vizitori values('1243722629','Arlind','Islami','2021-01-10','2021-01-11','006')
+insert into Vizitori values('1223726627','Ilir','Krasniqi','2021-01-12','2021-01-13','007')
+insert into Vizitori values('1243726543','Lirim','Beqiri','2021-01-14','2021-01-15','008')
+insert into Vizitori values('1223694628','Egzon','Rugova','2021-01-16','2021-01-17','009')
+insert into Vizitori values('1243714629','Arsim','Leci','2021-01-18','2021-01-19','010')
+
+Select * from Vizitori
+order by selia;
+
+------------------2) Tabela Vizitori----------
+
+
+
+
+
 
 
 
