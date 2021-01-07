@@ -254,6 +254,8 @@ Create Table Menagjeri_Aktiviteti_Shpallja(
 );
 -----Tabela Menagjeri_Aktiviteti_Shpallja----
 
+
+
 ---Insertimi i seteve te te dhenave per tabelat Prind---
 
 -------------------1) Tabela Selia-------------
@@ -271,7 +273,107 @@ insert into Selia values ('010','Selia10','Lipijan','Atdheu','24000')
 Select * from Selia;
 -------------------1) Tabela Selia------------
 
-------------------2) Tabela Vizitori----------
+
+--------------- 2)Tabela Vetura----------
+Select *
+from Vetura order by Selia
+
+insert into Vetura values('01234','Audi','4','2020-09-25','2008','001')
+insert into Vetura values('03567','Golf','4','2020-08-22','2006','002')
+insert into Vetura values('03343','Mercedes','5','2019-04-19','2012','003')
+insert into Vetura values('04644','BMV','4','2018-05-30','2013','004')
+insert into Vetura values('02654','BMV','4','2019-06-20','2014','005')
+insert into Vetura values('03644','Opel','4','2017-03-10','2007','006')
+insert into Vetura values('01644','Tesla','6','2020-09-24','2019','007')
+insert into Vetura values('08423','BMV','5','2015-05-12','2011','008')
+insert into Vetura values('09634','Ford','4','2014-04-16','2010','009')
+insert into Vetura values('07834','Volvo','5','2018-05-30','2016','010')
+
+--------------- 2)Tabela Vetura----------
+
+----------------3) Tabela StafiPuntorve--------------
+Select *
+from StafiPuntorve
+
+insert into StafiPuntorve values('10001','Albin','Islami','1998-04-22','BSc','01234','001')
+insert into StafiPuntorve values('10002','Visar','Mehmeti','1997-05-12','BSc','03567','002')
+insert into StafiPuntorve values('10003','Endrit','Mehmeti','1997-08-18','BSc','03343','003')
+insert into StafiPuntorve values('10004','Shpetim','Shyti','1997-09-23','BSc','04644','004')
+insert into StafiPuntorve values('10005','Kushtrim','Jashari','1996-04-06','BSc','02654','005')
+insert into StafiPuntorve values('10006','Agron','Bajrami','1997-08-28','BSc','03644','006')
+insert into StafiPuntorve values('10007','Burim','Hyseni','1996-03-09','BSc','01644','007')
+insert into StafiPuntorve values('10008','Blerim','Gashi','1995-04-07','BSc','08423','008')
+insert into StafiPuntorve values('10009','Leotrim','Smajli','1994-08-18','BSc','09634','009')
+insert into StafiPuntorve values('10010','Artan','Krasniqi','1993-06-16','BSc','07834','010')
+
+----------------3) Tabela StafiPuntorve--------------
+
+
+-------------4) Tabela Zyrja---------------
+Select *
+from Zyrja
+Insert into Zyrja(Kategoria,Puntori,Selia)
+values ('Zyrja A','10001','001')
+Insert into Zyrja(Kategoria,Puntori,Selia)
+values('Zyrja B','10002','002')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja C','80.4','10003','003')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja AB','83.4','10004','004')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja DH','85.8','10005','005')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja LB','70.7','10006','006')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja G','87.4','10007','007')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja OT','89.3','10008','008')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja TR','60.6','10009','009')
+Insert into Zyrja(Kategoria,Madhesia,Puntori,Selia)
+values('Zyrja ET','88.6','10010','010')
+
+
+-------------4) Tabela Zyrja-------------------
+
+---------5) Tabela DrejtoriEkzekutiv----- 
+Select *
+from DrejtoriEkzekutiv
+
+insert into DrejtoriEkzekutiv(Id_Drejtori,Emri,Mbimeri,Qyteti,Rruga,ZipKodi)
+values('20100','Agron','Gashi','Vushtrri','Deshmoret e Kombit','42000')
+insert into DrejtoriEkzekutiv(Id_Drejtori,Emri,Mbimeri,Qyteti,Rruga,ZipKodi,Zyrja,Selia)
+values('20300','ALbin','Zeka','Prishtine','7 Shtatori','42000','2','002')
+insert into DrejtoriEkzekutiv(Id_Drejtori,Emri,Mbimeri,Qyteti,Rruga,ZipKodi,Zyrja,Selia)
+values('20400','Jeton','Krasniqi','Gjakove','1 Tetori','30000','3','003')
+insert into DrejtoriEkzekutiv values('20200','Edmond','Hyseni','Mitrovice','Ardhmeria','40000','1','001')
+insert into DrejtoriEkzekutiv values('20500','Arlinda','Gashi','Prizren','Sami Frasheri','22000','4','004')
+insert into DrejtoriEkzekutiv values('20600','Egzone','Berisha','Gjilan','Ali Kelmendi','29000','5','005')
+insert into DrejtoriEkzekutiv values('20700','Ekrem','Ibishi','Ferizaj','Ferhat Draga','50000','6','006')
+insert into DrejtoriEkzekutiv values('20800','Burim','Gjaka','Istog','Mustafe Shyti','46000','7','007')
+insert into DrejtoriEkzekutiv values('20900','Naser','Bajrami','Peje','Bahri Kuqi','23000','8','008')
+insert into DrejtoriEkzekutiv values('21000','Enver','Basholli','Lipijan','Atdheu','24000','9','009')
+
+---------5) Tabela DrejtoriEkzekutiv-------
+
+---------6) Tabela Telefoni------------
+Select *
+from Telefoni
+insert into Telefoni values('20100','044628833')
+insert into Telefoni values('20200','044628834')
+insert into Telefoni values('20300','044628835')
+insert into Telefoni values('20400','044628836')
+insert into Telefoni values('20500','044628832')
+insert into Telefoni values('20600','044628831')
+insert into Telefoni values('20700','044628837')
+insert into Telefoni values('20800','044628838')
+insert into Telefoni values('20900','044628839')
+insert into Telefoni values('21000','044628810')
+
+---------6) Tabela Telefoni------------
+
+
+------------------7) Tabela Vizitori--------
 insert into Vizitori values('1243724628','Donjeta','Krasniqi','2020-12-29','2020-12-30','001')
 insert into Vizitori values('1243724392','Arton','Gashi','2021-01-04','2021-01-06','002')
 insert into Vizitori values('1143324622','Endrit','Bajrami','2021-01-07','2021-01-08','003')
@@ -286,7 +388,52 @@ insert into Vizitori values('1243714629','Arsim','Leci','2021-01-18','2021-01-19
 Select * from Vizitori
 order by selia;
 
-------------------2) Tabela Vizitori----------
+------------------7) Tabela Vizitori----------
+
+--------------8) Tabela SallaTakimeve---------
+Select * 
+from SallaTakimeve
+
+insert into SallaTakimeve values('101','001')
+insert into SallaTakimeve values('102','002')
+insert into SallaTakimeve values('103','003')
+insert into SallaTakimeve values('104','004')
+insert into SallaTakimeve values('105','005')
+insert into SallaTakimeve values('106','006')
+insert into SallaTakimeve values('107','007')
+insert into SallaTakimeve values('108','008')
+insert into SallaTakimeve values('109','009')
+insert into SallaTakimeve values('110','010')
+--------------8) Tabela SallaTakimeve-------------
+
+----------- 9)Tabela Menaxheriprojekteve
+Select *
+from MenagjeriProjekteve
+
+
+---------10) Tabela Takimi---------- duhet me shtu ID_Drejtori qe me funksionu
+Select *
+from Takimi
+
+insert into Takimi values('1','13:00:00','101','20100')
+insert into Takimi values('2','14:00:00','102','20101')
+insert into Takimi values('3','15:00:00','103','20102')
+insert into Takimi values('4','16:00:00','104','20103')
+insert into Takimi values('5','17:00:00','105','20104')
+insert into Takimi values('6','18:00:00','106','20105')
+insert into Takimi values('7','19:00:00','107','20106')
+insert into Takimi values('8','20:00:00','108','20107')
+insert into Takimi values('9','20:30:00','109','20108')
+insert into Takimi values('10','21:00:00','110','20109')
+---------4) Tabela Takimi----------
+
+
+
+
+
+
+
+
 
 
 
