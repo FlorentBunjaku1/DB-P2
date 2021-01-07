@@ -36,19 +36,11 @@ Create Table StafiPuntorve(
 	Mbimeri varchar(20) Not Null,
 	DateLindja Date,
 	Kualifikimi varchar(50),
-	Vetura int Foreign Key References Vetura(Nr_Targave) ON Update Cascade ON Delete Set Null
+	Vetura int Foreign Key References Vetura(Nr_Targave) ON Update Cascade ON Delete Set Null,
+	Selia int Foreign Key References Selia(Nr_Identifikues)
 );
 -----Tabela StafiPuntorve------
 
------Tabela Selia-Stafi------
-Create Table Selia_Stafi(
-	Selia int,
-	Stafi int,
-	Primary Key (Selia, Stafi),
-	Foreign Key (Selia) References Selia(Nr_Identifikues),
-	Foreign Key (Stafi) References StafiPuntorve(ID_Puntori)
-);
------Tabela Selia-Stafi------
 
 
 -----Tabela Zyrja------
