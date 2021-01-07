@@ -406,25 +406,56 @@ insert into SallaTakimeve values('109','009')
 insert into SallaTakimeve values('110','010')
 --------------8) Tabela SallaTakimeve-------------
 
------------ 9)Tabela Menaxheriprojekteve
+----------- 9)Tabela Menaxheriprojekteve---------
 Select *
 from MenagjeriProjekteve
+insert into MenagjeriProjekteve values('10001')
+insert into MenagjeriProjekteve values('10002')
+insert into MenagjeriProjekteve values('10003')
+insert into MenagjeriProjekteve values('10004')
+insert into MenagjeriProjekteve values('10005')
+insert into MenagjeriProjekteve values('10006')
+insert into MenagjeriProjekteve values('10007')
+insert into MenagjeriProjekteve values('10008')
+insert into MenagjeriProjekteve values('10009')
+insert into MenagjeriProjekteve values('10010')
+----------- 9)Tabela Menaxheriprojekteve---------
 
 
----------10) Tabela Takimi---------- duhet me shtu ID_Drejtori qe me funksionu
+----------10) Tabela ZyrtarProjekteve-----------Duhet me shtu edhe Menaxheri--
+Select *
+from ZyrtarProjekteve
+insert into ZyrtarProjekteve values('10001')
+insert into ZyrtarProjekteve values('10002')
+insert into ZyrtarProjekteve values('10003')
+insert into ZyrtarProjekteve values('10004')
+insert into ZyrtarProjekteve values('10005')
+insert into ZyrtarProjekteve values('10006')
+insert into ZyrtarProjekteve values('10007')
+insert into ZyrtarProjekteve values('10008')
+insert into ZyrtarProjekteve values('10009')
+insert into ZyrtarProjekteve values('10010')
+
+
+----------10) Tabela ZyrtarProjekteve-------------
+
+
+
+
+---------11) Tabela Takimi----------
 Select *
 from Takimi
 
 insert into Takimi values('1','13:00:00','101','20100')
-insert into Takimi values('2','14:00:00','102','20101')
-insert into Takimi values('3','15:00:00','103','20102')
-insert into Takimi values('4','16:00:00','104','20103')
-insert into Takimi values('5','17:00:00','105','20104')
-insert into Takimi values('6','18:00:00','106','20105')
-insert into Takimi values('7','19:00:00','107','20106')
-insert into Takimi values('8','20:00:00','108','20107')
-insert into Takimi values('9','20:30:00','109','20108')
-insert into Takimi values('10','21:00:00','110','20109')
+insert into Takimi values('2','14:00:00','102','20200')
+insert into Takimi values('3','15:00:00','103','20300')
+insert into Takimi values('4','16:00:00','104','20400')
+insert into Takimi values('5','17:00:00','105','20500')
+insert into Takimi values('6','18:00:00','106','20600')
+insert into Takimi values('7','19:00:00','107','20700')
+insert into Takimi values('8','20:00:00','108','20800')
+insert into Takimi values('9','20:30:00','109','20900')
+insert into Takimi values('10','21:00:00','110','21000')
 ---------4) Tabela Takimi----------
 
 
