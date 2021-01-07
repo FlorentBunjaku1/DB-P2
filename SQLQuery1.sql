@@ -508,6 +508,75 @@ Insert into Fermeri values('1234567860','Gezim','Dushi','M','Gjilan','Ali Kelmen
 Insert into Fermeri values('1234567870','Besim','Bislimi','M','Ferizaj','Ferhat Draga','50000','1234567810')
 Insert into Fermeri values('1234567880','Muhamet','Topanica','M','Istog','Mustafe Shyti','46000','1234567810')
 Insert into Fermeri values('1234567890','Agim','Aliu','M','Peje','Bahri Kuqi','23000','1234567810')
+---------12) Tabela Fermeri------------
+
+---------13 Tabela Shpallja----------
+Select *
+from Shpallja
+Insert into Shpallja values('51','Vushtrri')
+Insert into Shpallja values('52','Mitrovice')
+Insert into Shpallja values('53','Prishtine')
+Insert into Shpallja values('54','Gjakove')
+Insert into Shpallja values('55','Prishtine')
+Insert into Shpallja values('56','Vushtrri')
+Insert into Shpallja values('57','Peje')
+Insert into Shpallja values('58','Prishtine')
+Insert into Shpallja values('59','Prizren')
+Insert into Shpallja values('60','Lipijan')
+---------13 Tabela Shpallja----------
+
+---------14 Tabela Projekti----------
+Select *
+from Projekti
+Insert into Projekti values('100','Egzon','2019-05-22','2019-09-28','2000')
+Insert into Projekti values('101','Besfort','2018-04-12','2019-02-03','30000')
+Insert into Projekti values('102','Besa','2019-06-12','2019-08-27','4000')
+Insert into Projekti values('103','Behar','2019-08-02','2019-09-24','2000')
+Insert into Projekti values('104','Valmir','2019-07-30','2019-10-29','5000')
+Insert into Projekti values('105','Fatmir','2019-09-12','2019-11-26','2000')
+Insert into Projekti values('106','Alban','2019-10-13','2019-12-19','6000')
+Insert into Projekti values('107','Erblin','2019-11-30','2019-12-15','8000')
+Insert into Projekti values('108','Albert','2019-12-21','2020-02-21','2000')
+Insert into Projekti values('109','Bujar','2019-05-22','2019-08-23','9000')
+Insert into Projekti values('110','Rinor','2019-02-19','2019-04-25','1000')
+---------14 Tabela Projekti----------
+
+---------15 Tabela Aktiviteti-----------
+Select *
+from Aktiviteti
+Insert into Aktiviteti values('A01','100')
+Insert into Aktiviteti values('A02','101')
+Insert into Aktiviteti values('A03','102')
+Insert into Aktiviteti values('A04','103')
+Insert into Aktiviteti values('A05','104')
+Insert into Aktiviteti values('A06','105')
+Insert into Aktiviteti values('A07','106')
+Insert into Aktiviteti values('A08','107')
+Insert into Aktiviteti values('A09','108')
+Insert into Aktiviteti values('A10','109')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
