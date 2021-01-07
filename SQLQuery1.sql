@@ -494,7 +494,29 @@ insert into Takimi values('10','21:00:00','110','21000')
 
 Select t.Salla, s.Selia
 From Takimi t JOIN SallaTakimeve s ON t.Salla = s.Nr_Salles
----------4) Tabela Takimi----------
+---------11) Tabela Takimi----------
+
+---------12) Tabela Fermeri------------
+Select * 
+from Fermeri
+Insert into Fermeri values('1234567810','Almir','Gashi','M','Vushtrri','Deshmoret e Kombit','42000','1234567810')
+Insert into Fermeri values('1234567820','Andi','Beqiri','M','Mitrovice','Ardhmeria','40000','1234567810')
+Insert into Fermeri values('1234567830','Leon','Krasniqi','M','Prishtine','7 Shtatori','42000','1234567810')
+Insert into Fermeri values('1234567840','Besmir','Gjaka','M','Gjakove','1 Tetori','30000','1234567810')
+Insert into Fermeri values('1234567850','Agron','Muja','M','Prizren','Sami Frasheri','22000','1234567810')
+Insert into Fermeri values('1234567860','Gezim','Dushi','M','Gjilan','Ali Kelmendi','29000','1234567810')
+Insert into Fermeri values('1234567870','Besim','Bislimi','M','Ferizaj','Ferhat Draga','50000','1234567810')
+Insert into Fermeri values('1234567880','Muhamet','Topanica','M','Istog','Mustafe Shyti','46000','1234567810')
+Insert into Fermeri values('1234567890','Agim','Aliu','M','Peje','Bahri Kuqi','23000','1234567810')
+
+
+
+
+
+
+
+
+
 
 
 
