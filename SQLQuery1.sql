@@ -554,11 +554,22 @@ Insert into Aktiviteti values('A07','106')
 Insert into Aktiviteti values('A08','107')
 Insert into Aktiviteti values('A09','108')
 Insert into Aktiviteti values('A10','109')
+Insert into Aktiviteti values('A11','101')
+Insert into Aktiviteti values('A12','102')
+Insert into Aktiviteti values('A13','103')
+Insert into Aktiviteti values('A14','104')
+Insert into Aktiviteti values('A15','105')
+Insert into Aktiviteti values('A16','106')
+Insert into Aktiviteti values('A17','107')
+Insert into Aktiviteti values('A18','108')
+Insert into Aktiviteti values('A19','109')
+Insert into Aktiviteti values('A20','100')
 ---------15 Tabela Aktiviteti-----------
 
 ----------16 Tabela GrandePerFermer---------
 Select * 
 from GrandePerFermer
+
 Insert into GrandePerFermer values('A01','Aktiv',15)
 Insert into GrandePerFermer values('A02','Aktiv',10)
 Insert into GrandePerFermer values('A03','Aktiv',9)
@@ -572,11 +583,30 @@ Insert into GrandePerFermer values('A10','Aktiv',16)
 
 
 
+----------17 Tabela Trajnimi
+Insert Into Trajnimi Values('A11', 'Ujitia E Serave', 'Mitrovice');
+Insert Into Trajnimi Values('A12', 'Ujitia E Serave', 'Vushtrri');
+Insert Into Trajnimi Values('A13', 'Ujitia E Serave', 'Rahovec');
+Insert Into Trajnimi Values('A14', 'Ujitia E Serave', 'Suharek');
+Insert Into Trajnimi Values('A15', 'Ujitia E Serave', 'Prishtine');
+Insert Into Trajnimi Values('A16', 'Ujitia E Serave', 'Podujev');
+Insert Into Trajnimi Values('A17', 'Ujitia E Serave', 'Maxhunaj');
+Insert Into Trajnimi Values('A18', 'Ujitia E Serave', 'Pestove');
+Insert Into Trajnimi Values('A19', 'Ujitia E Serave', 'Novolan');
+Insert Into Trajnimi Values('A20', 'Ujitia E Serave', 'Shtime');
 
 
-
-
-
+----------17 Tabela Orari
+Insert into Orari Values('A11','2021-05-11');
+Insert into Orari Values('A12','2021-06-01');
+Insert into Orari Values('A13','2021-07-10');
+Insert into Orari Values('A14','2021-08-15');
+Insert into Orari Values('A15','2021-09-19');
+Insert into Orari Values('A16','2021-11-20');
+Insert into Orari Values('A17','2021-12-25');
+Insert into Orari Values('A18','2021-10-11');
+Insert into Orari Values('A19','2021-03-13');
+Insert into Orari Values('A20','2021-02-16');
 
 
 
