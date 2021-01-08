@@ -554,6 +554,23 @@ Insert into Aktiviteti values('A07','106')
 Insert into Aktiviteti values('A08','107')
 Insert into Aktiviteti values('A09','108')
 Insert into Aktiviteti values('A10','109')
+---------15 Tabela Aktiviteti-----------
+
+----------16 Tabela GrandePerFermer---------
+Select * 
+from GrandePerFermer
+Insert into GrandePerFermer values('A01','Aktiv',15)
+Insert into GrandePerFermer values('A02','Aktiv',10)
+Insert into GrandePerFermer values('A03','Aktiv',9)
+Insert into GrandePerFermer values('A04','Aktiv',8)
+Insert into GrandePerFermer values('A05','Aktiv',14)
+Insert into GrandePerFermer values('A06','Aktiv',17)
+Insert into GrandePerFermer values('A07','Aktiv',18)
+Insert into GrandePerFermer values('A08','Aktiv',12)
+Insert into GrandePerFermer values('A09','Aktiv',11)
+Insert into GrandePerFermer values('A10','Aktiv',16)
+
+
 
 
 
