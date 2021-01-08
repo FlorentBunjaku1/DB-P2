@@ -198,7 +198,7 @@ Create Table Projekti(
 -----Tabela Projekti----
 
 -----Tabela Projekti_Menaxheri_Drejotri----
-Create Table Projekti_Menagjeri_Drejotri(
+Create Table Projekti_Menagjeri_Drejtori(
 	Projekti int Primary Key,
 	Menagjeri int Foreign Key References MenagjeriProjekteve(ID_Puntori),
 	Drejtori int Foreign Key References DrejtoriEkzekutiv(Id_drejtori),
@@ -713,7 +713,21 @@ From Shpallja_Fermeri
 
 ---------20 Tabela ShpalljaFermeri----------
 
+---------21 Tabela Projekti_Menagjeri_Drejtori----------
 
+Select *
+from Projekti_Menagjeri_Drejtori
+Insert into Projekti_Menagjeri_Drejtori values('100','10001','20100')
+Insert into Projekti_Menagjeri_Drejtori values('101','10002','20200')
+Insert into Projekti_Menagjeri_Drejtori values('102','10003','20300')
+Insert into Projekti_Menagjeri_Drejtori values('103','10004','20400')
+Insert into Projekti_Menagjeri_Drejtori values('104','10005','20500')
+Insert into Projekti_Menagjeri_Drejtori values('105','10006','20600')
+Insert into Projekti_Menagjeri_Drejtori values('106','10007','20700')
+Insert into Projekti_Menagjeri_Drejtori values('107','10008','20800')
+Insert into Projekti_Menagjeri_Drejtori values('108','10009','20900')
+Insert into Projekti_Menagjeri_Drejtori values('109','10010','21000')
+---------21 Tabela Projekti_Menagjeri_Drejtori----------
 
 
 
