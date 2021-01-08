@@ -508,6 +508,7 @@ Insert into Fermeri values('1234567860','Gezim','Dushi','M','Gjilan','Ali Kelmen
 Insert into Fermeri values('1234567870','Besim','Bislimi','M','Ferizaj','Ferhat Draga','50000','1234567810')
 Insert into Fermeri values('1234567880','Muhamet','Topanica','M','Istog','Mustafe Shyti','46000','1234567810')
 Insert into Fermeri values('1234567890','Agim','Aliu','M','Peje','Bahri Kuqi','23000','1234567810')
+Insert into Fermeri values('1234567900','Albin','Berisha','M','Vushtrri','Rexhep Musa','42000','1234567810')
 ---------12) Tabela Fermeri------------
 
 ---------13 Tabela Shpallja----------
@@ -612,6 +613,18 @@ Insert into Orari Values('A20','2021-02-16');
 
 Select t.Emri, o.Data
 From Orari o JOIN Trajnimi t ON o.ID_Trajnimi = t.ID_Trajnimi
+
+---------18) Tabela TelefoniFermeri------------
+Insert Into TelefoniFermeri Values('1234567810','044001002');
+Insert Into TelefoniFermeri Values('1234567820','044001003');
+Insert Into TelefoniFermeri Values('1234567830','044001004');
+Insert Into TelefoniFermeri Values('1234567840','044001005');
+Insert Into TelefoniFermeri Values('1234567850','044001006');
+Insert Into TelefoniFermeri Values('1234567860','044001007');
+Insert Into TelefoniFermeri Values('1234567870','044001008');
+Insert Into TelefoniFermeri Values('1234567880','044001009');
+Insert Into TelefoniFermeri Values('1234567890','044001102');
+Insert Into TelefoniFermeri Values('1234567900','044001103');
 
 
 
