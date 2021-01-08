@@ -585,14 +585,14 @@ Insert into GrandePerFermer values('A10','Aktiv',16)
 
 ----------17 Tabela Trajnimi
 Insert Into Trajnimi Values('A11', 'Ujitia E Serave', 'Mitrovice');
-Insert Into Trajnimi Values('A12', 'Ujitia E Serave', 'Vushtrri');
-Insert Into Trajnimi Values('A13', 'Ujitia E Serave', 'Rahovec');
+Insert Into Trajnimi Values('A12', 'Mbiellia E Fidaneve', 'Vushtrri');
+Insert Into Trajnimi Values('A13', 'Pesticidet', 'Rahovec');
 Insert Into Trajnimi Values('A14', 'Ujitia E Serave', 'Suharek');
-Insert Into Trajnimi Values('A15', 'Ujitia E Serave', 'Prishtine');
+Insert Into Trajnimi Values('A15', 'Airosia E Serrave', 'Prishtine');
 Insert Into Trajnimi Values('A16', 'Ujitia E Serave', 'Podujev');
-Insert Into Trajnimi Values('A17', 'Ujitia E Serave', 'Maxhunaj');
-Insert Into Trajnimi Values('A18', 'Ujitia E Serave', 'Pestove');
-Insert Into Trajnimi Values('A19', 'Ujitia E Serave', 'Novolan');
+Insert Into Trajnimi Values('A17', 'Krasitia E Mollave', 'Maxhunaj');
+Insert Into Trajnimi Values('A18', 'Mbiellia E Fidaneve', 'Pestove');
+Insert Into Trajnimi Values('A19', 'Cilesia E Tokes', 'Novolan');
 Insert Into Trajnimi Values('A20', 'Ujitia E Serave', 'Shtime');
 
 
@@ -610,7 +610,8 @@ Insert into Orari Values('A20','2021-02-16');
 
 
 
-
+Select t.Emri, o.Data
+From Orari o JOIN Trajnimi t ON o.ID_Trajnimi = t.ID_Trajnimi
 
 
 
