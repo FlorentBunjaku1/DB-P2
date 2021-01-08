@@ -496,6 +496,14 @@ Select t.Salla, s.Selia
 From Takimi t JOIN SallaTakimeve s ON t.Salla = s.Nr_Salles
 ---------11) Tabela Takimi----------
 
+
+
+
+
+
+
+
+
 ---------12) Tabela Fermeri------------
 Select * 
 from Fermeri
@@ -526,40 +534,6 @@ Insert into Shpallja values('59','Prizren')
 Insert into Shpallja values('60','Lipijan')
 ---------13 Tabela Shpallja----------
 
----------20 Tabela Shpallja_Fermeri----------
-Insert Into Shpallja_Fermeri Values('51','1234567810','2021-09-28');
-Insert Into Shpallja_Fermeri Values('51','1234567830','2021-09-18');
-Insert Into Shpallja_Fermeri Values('51','1234567850','2021-09-08');
-Insert Into Shpallja_Fermeri Values('51','1234567900','2021-09-13');
-Insert Into Shpallja_Fermeri Values('51','1234567890','2021-08-25');
-Insert Into Shpallja_Fermeri Values('51','1234567880','2021-07-27');
-Insert Into Shpallja_Fermeri Values('52','1234567810','2021-06-24');
-Insert Into Shpallja_Fermeri Values('52','1234567900','2021-05-22');
-Insert Into Shpallja_Fermeri Values('52','1234567860','2021-04-21');
-Insert Into Shpallja_Fermeri Values('52','1234567870','2021-03-29');
-Insert Into Shpallja_Fermeri Values('53','1234567870','2021-02-20');
-Insert Into Shpallja_Fermeri Values('53','1234567810','2021-01-30');
-Insert Into Shpallja_Fermeri Values('53','1234567830','2021-01-26');
-Insert Into Shpallja_Fermeri Values('53','1234567850','2021-02-28');
-Insert Into Shpallja_Fermeri Values('53','1234567880','2021-04-27');
-Insert Into Shpallja_Fermeri Values('54','1234567880','2021-10-28');
-Insert Into Shpallja_Fermeri Values('54','1234567900','2021-08-29');
-Insert Into Shpallja_Fermeri Values('54','1234567820','2021-07-20');
-Insert Into Shpallja_Fermeri Values('54','1234567830','2021-06-21');
-Insert Into Shpallja_Fermeri Values('54','1234567840','2021-05-23');
-Insert Into Shpallja_Fermeri Values('55','1234567860','2021-12-26');
-Insert Into Shpallja_Fermeri Values('56','1234567850','2021-05-21');
-Insert Into Shpallja_Fermeri Values('57','1234567820','2021-12-18');
-Insert Into Shpallja_Fermeri Values('58','1234567900','2021-05-17');
-Insert Into Shpallja_Fermeri Values('59','1234567810','2021-04-19');
-Insert Into Shpallja_Fermeri Values('60','1234567820','2021-01-20');
-
-
-
-Select *
-From Shpallja_Fermeri
-
----------20 Tabela ShpalljaFermeri----------
 
 ---------14 Tabela Projekti----------
 Select *
@@ -663,6 +637,36 @@ Insert Into TelefoniFermeri Values('1234567900','044001103');
 
 
 
+----------19 Tabela Takimi_Stafi-----------
+
+Select * 
+from Takimi_Stafi 
+Insert into Takimi_Stafi values('1','10001')
+Insert into Takimi_Stafi values('2','10002')
+Insert into Takimi_Stafi values('3','10003')
+Insert into Takimi_Stafi values('4','10004')
+Insert into Takimi_Stafi values('5','10005')
+Insert into Takimi_Stafi values('6','10006')
+Insert into Takimi_Stafi values('7','10007')
+Insert into Takimi_Stafi values('8','10008')
+Insert into Takimi_Stafi values('9','10009')
+Insert into Takimi_Stafi values('10','10010')
+Insert into Takimi_Stafi values('1','10011')
+Insert into Takimi_Stafi values('2','10012')
+Insert into Takimi_Stafi values('3','10013')
+Insert into Takimi_Stafi values('4','10014')
+Insert into Takimi_Stafi values('5','10015')
+Insert into Takimi_Stafi values('6','10016')
+Insert into Takimi_Stafi values('7','10017')
+Insert into Takimi_Stafi values('8','10018')
+Insert into Takimi_Stafi values('9','10019')
+Insert into Takimi_Stafi values('10','10020')
+Insert into Takimi_Stafi values('5','10001')
+Insert into Takimi_Stafi values('6','10011')
+Insert into Takimi_Stafi values('7','10006')
+Insert into Takimi_Stafi values('8','10016')
+Insert into Takimi_Stafi values('9','10011')
+Insert into Takimi_Stafi values('10','10013')
 
 
 
@@ -671,6 +675,43 @@ Insert Into TelefoniFermeri Values('1234567900','044001103');
 
 
 
+
+
+
+---------20 Tabela Shpallja_Fermeri----------
+Insert Into Shpallja_Fermeri Values('51','1234567810','2021-09-28');
+Insert Into Shpallja_Fermeri Values('51','1234567830','2021-09-18');
+Insert Into Shpallja_Fermeri Values('51','1234567850','2021-09-08');
+Insert Into Shpallja_Fermeri Values('51','1234567900','2021-09-13');
+Insert Into Shpallja_Fermeri Values('51','1234567890','2021-08-25');
+Insert Into Shpallja_Fermeri Values('51','1234567880','2021-07-27');
+Insert Into Shpallja_Fermeri Values('52','1234567810','2021-06-24');
+Insert Into Shpallja_Fermeri Values('52','1234567900','2021-05-22');
+Insert Into Shpallja_Fermeri Values('52','1234567860','2021-04-21');
+Insert Into Shpallja_Fermeri Values('52','1234567870','2021-03-29');
+Insert Into Shpallja_Fermeri Values('53','1234567870','2021-02-20');
+Insert Into Shpallja_Fermeri Values('53','1234567810','2021-01-30');
+Insert Into Shpallja_Fermeri Values('53','1234567830','2021-01-26');
+Insert Into Shpallja_Fermeri Values('53','1234567850','2021-02-28');
+Insert Into Shpallja_Fermeri Values('53','1234567880','2021-04-27');
+Insert Into Shpallja_Fermeri Values('54','1234567880','2021-10-28');
+Insert Into Shpallja_Fermeri Values('54','1234567900','2021-08-29');
+Insert Into Shpallja_Fermeri Values('54','1234567820','2021-07-20');
+Insert Into Shpallja_Fermeri Values('54','1234567830','2021-06-21');
+Insert Into Shpallja_Fermeri Values('54','1234567840','2021-05-23');
+Insert Into Shpallja_Fermeri Values('55','1234567860','2021-12-26');
+Insert Into Shpallja_Fermeri Values('56','1234567850','2021-05-21');
+Insert Into Shpallja_Fermeri Values('57','1234567820','2021-12-18');
+Insert Into Shpallja_Fermeri Values('58','1234567900','2021-05-17');
+Insert Into Shpallja_Fermeri Values('59','1234567810','2021-04-19');
+Insert Into Shpallja_Fermeri Values('60','1234567820','2021-01-20');
+
+
+
+Select *
+From Shpallja_Fermeri
+
+---------20 Tabela ShpalljaFermeri----------
 
 
 
