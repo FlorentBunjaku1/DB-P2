@@ -118,9 +118,6 @@ Create Table Takimi(
 -----Tabela Takimi----
 
 
-
-
-
 -----Tabela Takimi_Stafi----
 Create Table Takimi_Stafi(
 	Takimi int,
@@ -270,13 +267,11 @@ insert into Selia values ('008','Selia8','Istog','Mustafe Shyti','46000')
 insert into Selia values ('009','Selia9','Peje','Bahri Kuqi','23000')
 insert into Selia values ('010','Selia10','Lipijan','Atdheu','24000')
 
-Select * from Selia;
+
 -------------------1) Tabela Selia------------
 
 
 --------------- 2)Tabela Vetura----------
-Select *
-from Vetura order by Selia
 
 insert into Vetura values('01234','Audi','4','2020-09-25','2008','001')
 insert into Vetura values('03567','Golf','4','2020-08-22','2006','001')
@@ -292,8 +287,6 @@ insert into Vetura values('07834','Volvo','5','2018-05-30','2016','001')
 --------------- 2)Tabela Vetura----------
 
 ----------------3) Tabela StafiPuntorve--------------
-Select *
-from StafiPuntorve
 
 insert into StafiPuntorve values('10001','Albin','Islami','1998-04-22','BSc','01234','001')
 insert into StafiPuntorve values('10002','Visar','Mehmeti','1997-05-12','BSc','03567','001')
@@ -322,8 +315,6 @@ insert into StafiPuntorve values('10020','Driton','Sadiku','1996-10-05','BSc','0
 
 
 -------------4) Tabela Zyrja---------------
-Select *
-from Zyrja
 
 Insert into Zyrja(Kategoria,Puntori,Selia)
 values ('Zyrja A','10001','001')
@@ -370,8 +361,7 @@ values('Zyrja MF','10020','001')
 -------------4) Tabela Zyrja-------------------
 
 ---------5) Tabela DrejtoriEkzekutiv----- 
-Select *
-from DrejtoriEkzekutiv
+
 
 insert into DrejtoriEkzekutiv values('20100','Edmond','Hyseni','Mitrovice','Ardhmeria','40000','1','001')
 insert into DrejtoriEkzekutiv values('20200','ALbin','Zeka','Prishtine','7 Shtatori','42000','2','002')
@@ -387,8 +377,7 @@ insert into DrejtoriEkzekutiv values('21000','Agron','Gashi','Vushtrri','Deshmor
 ---------5) Tabela DrejtoriEkzekutiv-------
 
 ---------6) Tabela Telefoni------------
-Select *
-from Telefoni
+
 
 insert into Telefoni values('20100','044628833')
 insert into Telefoni values('20200','044628834')
@@ -416,14 +405,10 @@ insert into Vizitori values('1243726543','Lirim','Beqiri','2021-01-14','2021-01-
 insert into Vizitori values('1223694628','Egzon','Rugova','2021-01-16','2021-01-17','009')
 insert into Vizitori values('1243714629','Arsim','Leci','2021-01-18','2021-01-19','010')
 
-Select * from Vizitori
-order by selia;
 
 ------------------7) Tabela Vizitori----------
 
 --------------8) Tabela SallaTakimeve---------
-Select * 
-from SallaTakimeve
 
 insert into SallaTakimeve values('101','001')
 insert into SallaTakimeve values('102','002')
@@ -439,8 +424,6 @@ insert into SallaTakimeve values('110','010')
 --------------8) Tabela SallaTakimeve-------------
 
 ----------- 9)Tabela Menaxheriprojekteve---------
-Select *
-from MenagjeriProjekteve
 
 insert into MenagjeriProjekteve values('10001')
 insert into MenagjeriProjekteve values('10002')
@@ -456,8 +439,6 @@ insert into MenagjeriProjekteve values('10010')
 
 
 ----------10) Tabela ZyrtarProjekteve-----------Duhet me shtu edhe Menaxheri--
-Select *
-from ZyrtarProjekteve
 
 insert into ZyrtarProjekteve values('10011', '10001')
 insert into ZyrtarProjekteve values('10012', '10002')
@@ -477,8 +458,7 @@ insert into ZyrtarProjekteve values('10020', '10010')
 
 
 ---------11) Tabela Takimi----------
-Select *
-from Takimi
+
 
 insert into Takimi values('1','13:00:00','101','20100')
 insert into Takimi values('2','14:00:00','102','20200')
@@ -492,8 +472,6 @@ insert into Takimi values('9','20:30:00','109','20900')
 insert into Takimi values('10','21:00:00','110','21000')
 
 
-Select t.Salla, s.Selia
-From Takimi t JOIN SallaTakimeve s ON t.Salla = s.Nr_Salles
 ---------11) Tabela Takimi----------
 
 
@@ -505,8 +483,7 @@ From Takimi t JOIN SallaTakimeve s ON t.Salla = s.Nr_Salles
 
 
 ---------12) Tabela Fermeri------------
-Select * 
-from Fermeri
+
 Insert into Fermeri values('1234567810','Almir','Gashi','M','Vushtrri','Deshmoret e Kombit','42000','1234567810')
 Insert into Fermeri values('1234567820','Andi','Beqiri','M','Mitrovice','Ardhmeria','40000','1234567810')
 Insert into Fermeri values('1234567830','Leon','Krasniqi','M','Prishtine','7 Shtatori','42000','1234567810')
@@ -520,8 +497,7 @@ Insert into Fermeri values('1234567900','Albin','Berisha','M','Vushtrri','Rexhep
 ---------12) Tabela Fermeri------------
 
 ---------13 Tabela Shpallja----------
-Select *
-from Shpallja
+
 Insert into Shpallja values('51','Vushtrri')
 Insert into Shpallja values('52','Mitrovice')
 Insert into Shpallja values('53','Prishtine')
@@ -536,8 +512,7 @@ Insert into Shpallja values('60','Lipijan')
 
 
 ---------14 Tabela Projekti----------
-Select *
-from Projekti
+
 Insert into Projekti values('100','Egzon','2019-05-22','2019-09-28','2000')
 Insert into Projekti values('101','Besfort','2018-04-12','2019-02-03','30000')
 Insert into Projekti values('102','Besa','2019-06-12','2019-08-27','4000')
@@ -552,8 +527,7 @@ Insert into Projekti values('110','Rinor','2019-02-19','2019-04-25','1000')
 ---------14 Tabela Projekti----------
 
 ---------15 Tabela Aktiviteti-----------
-Select *
-from Aktiviteti
+
 Insert into Aktiviteti values('A01','100')
 Insert into Aktiviteti values('A02','101')
 Insert into Aktiviteti values('A03','102')
@@ -577,8 +551,6 @@ Insert into Aktiviteti values('A20','100')
 ---------15 Tabela Aktiviteti-----------
 
 ----------16 Tabela GrandePerFermer---------
-Select * 
-from GrandePerFermer
 
 Insert into GrandePerFermer values('A01','Aktiv',15)
 Insert into GrandePerFermer values('A02','Aktiv',10)
@@ -606,7 +578,7 @@ Insert Into Trajnimi Values('A19', 'Cilesia E Tokes', 'Novolan');
 Insert Into Trajnimi Values('A20', 'Ujitia E Serave', 'Shtime');
 
 
-----------17 Tabela Orari
+----------18 Tabela Orari
 Insert into Orari Values('A11','2021-05-11');
 Insert into Orari Values('A12','2021-06-01');
 Insert into Orari Values('A13','2021-07-10');
@@ -620,10 +592,7 @@ Insert into Orari Values('A20','2021-02-16');
 
 
 
-Select t.Emri, o.Data
-From Orari o JOIN Trajnimi t ON o.ID_Trajnimi = t.ID_Trajnimi
-
----------18) Tabela TelefoniFermeri------------
+---------19) Tabela TelefoniFermeri------------
 Insert Into TelefoniFermeri Values('1234567810','044001002');
 Insert Into TelefoniFermeri Values('1234567820','044001003');
 Insert Into TelefoniFermeri Values('1234567830','044001004');
@@ -637,10 +606,8 @@ Insert Into TelefoniFermeri Values('1234567900','044001103');
 
 
 
-----------19 Tabela Takimi_Stafi-----------
+----------20 Tabela Takimi_Stafi-----------
 
-Select * 
-from Takimi_Stafi 
 Insert into Takimi_Stafi values('1','10001')
 Insert into Takimi_Stafi values('2','10002')
 Insert into Takimi_Stafi values('3','10003')
@@ -670,15 +637,7 @@ Insert into Takimi_Stafi values('10','10013')
 
 
 
-
-
-
-
-
-
-
-
----------20 Tabela Shpallja_Fermeri----------
+---------21 Tabela Shpallja_Fermeri----------
 Insert Into Shpallja_Fermeri Values('51','1234567810','2021-09-28');
 Insert Into Shpallja_Fermeri Values('51','1234567830','2021-09-18');
 Insert Into Shpallja_Fermeri Values('51','1234567850','2021-09-08');
@@ -701,22 +660,33 @@ Insert Into Shpallja_Fermeri Values('54','1234567830','2021-06-21');
 Insert Into Shpallja_Fermeri Values('54','1234567840','2021-05-23');
 Insert Into Shpallja_Fermeri Values('55','1234567860','2021-12-26');
 Insert Into Shpallja_Fermeri Values('56','1234567850','2021-05-21');
-Insert Into Shpallja_Fermeri Values('57','1234567820','2021-12-18');
+Insert Into Shpallja_Fermeri Values('57','1234567840','2021-12-18');
 Insert Into Shpallja_Fermeri Values('58','1234567900','2021-05-17');
 Insert Into Shpallja_Fermeri Values('59','1234567810','2021-04-19');
 Insert Into Shpallja_Fermeri Values('60','1234567820','2021-01-20');
 
 
 
-Select *
-From Shpallja_Fermeri
 
----------20 Tabela ShpalljaFermeri----------
+---------21 Tabela ShpalljaFermeri----------
 
----------21 Tabela Projekti_Menagjeri_Drejtori----------
+---------23 Tabela Menagjeri_Zyrtari_SHF----------
+Insert Into Menagjeri_Zyrtari_SHF Values('10011','10001','51','1234567890')
+Insert Into Menagjeri_Zyrtari_SHF Values('10012','10002','52','1234567870')
+Insert Into Menagjeri_Zyrtari_SHF Values('10013','10003','53','1234567880')
+Insert Into Menagjeri_Zyrtari_SHF Values('10014','10004','54','1234567830')
+Insert Into Menagjeri_Zyrtari_SHF Values('10015','10005','55','1234567860')
+Insert Into Menagjeri_Zyrtari_SHF Values('10016','10006','56','1234567850')
+Insert Into Menagjeri_Zyrtari_SHF Values('10017','10007','57','1234567840')
+Insert Into Menagjeri_Zyrtari_SHF Values('10018','10008','58','1234567900')
+Insert Into Menagjeri_Zyrtari_SHF Values('10019','10009','59','1234567810')
+Insert Into Menagjeri_Zyrtari_SHF Values('10020','10010','60','1234567820')
 
-Select *
-from Projekti_Menagjeri_Drejtori
+---------23 Tabela Menagjeri_Zyrtari_SHF----------
+
+
+---------22 Tabela Projekti_Menagjeri_Drejtori----------
+
 Insert into Projekti_Menagjeri_Drejtori values('100','10001','20100')
 Insert into Projekti_Menagjeri_Drejtori values('101','10002','20200')
 Insert into Projekti_Menagjeri_Drejtori values('102','10003','20300')
@@ -727,12 +697,22 @@ Insert into Projekti_Menagjeri_Drejtori values('106','10007','20700')
 Insert into Projekti_Menagjeri_Drejtori values('107','10008','20800')
 Insert into Projekti_Menagjeri_Drejtori values('108','10009','20900')
 Insert into Projekti_Menagjeri_Drejtori values('109','10010','21000')
----------21 Tabela Projekti_Menagjeri_Drejtori----------
+---------22 Tabela Projekti_Menagjeri_Drejtori----------
 
 
+---------23 Tabela Menagjeri_Zyrtari_SHF----------
+Insert Into Menagjeri_Zyrtari_SHF Values('10011','10001','51','1234567890')
+Insert Into Menagjeri_Zyrtari_SHF Values('10012','10002','52','1234567870')
+Insert Into Menagjeri_Zyrtari_SHF Values('10013','10003','53','1234567880')
+Insert Into Menagjeri_Zyrtari_SHF Values('10014','10004','54','1234567830')
+Insert Into Menagjeri_Zyrtari_SHF Values('10015','10005','55','1234567860')
+Insert Into Menagjeri_Zyrtari_SHF Values('10016','10006','56','1234567850')
+Insert Into Menagjeri_Zyrtari_SHF Values('10017','10007','57','1234567840')
+Insert Into Menagjeri_Zyrtari_SHF Values('10018','10008','58','1234567900')
+Insert Into Menagjeri_Zyrtari_SHF Values('10019','10009','59','1234567810')
+Insert Into Menagjeri_Zyrtari_SHF Values('10020','10010','60','1234567820')
 
-
-
+---------23 Tabela Menagjeri_Zyrtari_SHF----------
 
 
 
