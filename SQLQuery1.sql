@@ -298,17 +298,17 @@ insert into StafiPuntorve values('10007','Burim','Hyseni','1996-03-09','BSc','01
 insert into StafiPuntorve values('10008','Blerim','Gashi','1995-04-07','BSc','08423','001')
 insert into StafiPuntorve values('10009','Leotrim','Smajli','1994-08-18','BSc','09634','001')
 insert into StafiPuntorve values('10010','Artan','Krasniqi','1993-06-16','BSc','07834','001')
-insert into StafiPuntorve values('10011','Naim','Salihu','1993-07-11','BSc','03343','001')
-insert into StafiPuntorve values('10012','Liridon','Beqiri','1996-03-15','BSc','01644','001')
-insert into StafiPuntorve values('10013','Blerta','Fazliu','1997-05-15','BSc','03644','001')
-insert into StafiPuntorve values('10014','Rexhep','Sahiti','1995-01-12','BSc','04644','001')
-insert into StafiPuntorve values('10014','Feride','Bislimi','1997-05-15','BSc','03567','001')
-insert into StafiPuntorve values('10015','Arlind','Hajdini','1996-11-11','BSc','02654','001')
-insert into StafiPuntorve values('10016','Enis','Ademaj','1996-11-11','BSc','01644','001')
-insert into StafiPuntorve values('10017','Ardit','Hajdari','1996-12-01','BSc','08423','001')
-insert into StafiPuntorve values('10018','Kaltrina','Ademi','1994-11-01','BSc','03343','001')
-insert into StafiPuntorve values('10019','Sevdije','Idrizi','1995-11-05','BSc','02654','001')
-insert into StafiPuntorve values('10020','Driton','Sadiku','1996-10-05','BSc','03343','001')
+insert into StafiPuntorve values('10011','Naim','Salihu','1993-07-11','MSc','03343','001')
+insert into StafiPuntorve values('10012','Liridon','Beqiri','1996-03-15','MSc','01644','001')
+insert into StafiPuntorve values('10013','Blerta','Fazliu','1997-05-15','MSc','03644','001')
+insert into StafiPuntorve values('10014','Rexhep','Sahiti','1995-01-12','MSc','04644','001')
+insert into StafiPuntorve values('10014','Feride','Bislimi','1997-05-15','MSc','03567','001')
+insert into StafiPuntorve values('10015','Arlind','Hajdini','1996-11-11','MSc','02654','001')
+insert into StafiPuntorve values('10016','Enis','Ademaj','1996-11-11','MSc','01644','001')
+insert into StafiPuntorve values('10017','Ardit','Hajdari','1996-12-01','MSc','08423','001')
+insert into StafiPuntorve values('10018','Kaltrina','Ademi','1994-11-01','MSc','03343','001')
+insert into StafiPuntorve values('10019','Sevdije','Idrizi','1995-11-05','MSc','02654','001')
+insert into StafiPuntorve values('10020','Driton','Sadiku','1996-10-05','MSc','03343','001')
 
 
 ----------------3) Tabela StafiPuntorve--------------
@@ -719,10 +719,18 @@ Insert Into Menagjeri_Zyrtari_SHF Values('10020','10010','60','1234567820')
 
 
 
+--------Delete 10 Objekte---------
+Delete Vetura 
+Where Selia = 001
+--------Delete 10 Objekte---------
 
+--------Update 20 Objekte
+Update Projekti
+set Buxheti = Buxheti/0.1
 
-
-
+Update StafiPuntorve
+set Kualifikimi = 'BSc'
+Where Kualifikimi = 'MSc'
 
 
 
